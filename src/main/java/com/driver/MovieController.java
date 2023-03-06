@@ -74,7 +74,7 @@ public class MovieController {
     public ResponseEntity deleteDirectorByName(@RequestParam("q") String name){
 
 
-        return new ResponseEntity(movieService.deleteDirectorByName(name),HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(movieService.deleteDirectorByName(name),HttpStatus.ACCEPTED);
     }
 
     //Deleting all directors
@@ -82,7 +82,7 @@ public class MovieController {
     public ResponseEntity deleteAllDirectors(){
 
        ;
-        return new ResponseEntity( movieService.deleteAllDirectors(),HttpStatus.ACCEPTED);
+        return new ResponseEntity<>( movieService.deleteAllDirectors(),HttpStatus.ACCEPTED);
     }
 
 

@@ -1,16 +1,18 @@
 package com.driver;
 
 public class Director {
-    //From question
-    //String name, int numberOfMovies, double imdbRating,
-    // no-args constructor, all-args constructor and getters-setters
-
-    //Declaring variable for this class
     private String name;
     private int numberOfMovies;
     private double imdbRating;
 
-    ////Making getter and setter for all
+    public Director() {
+    }
+
+    public Director(String name, int numberOfMovies, double imdbRating) {
+        this.name = name;
+        this.numberOfMovies = numberOfMovies;
+        this.imdbRating = imdbRating;
+    }
 
     public String getName() {
         return name;
@@ -33,18 +35,6 @@ public class Director {
     }
 
     public void setImdbRating(double imdbRating) {
-        this.imdbRating = imdbRating;
-    }
-    ///Getter and setter complete
-
-    //making constructor
-    public Director(){
-
-    }
-
-    public Director(String name, int numberOfMovies, double imdbRating) {
-        this.name = name;
-        this.numberOfMovies = numberOfMovies;
         this.imdbRating = imdbRating;
     }
 }
